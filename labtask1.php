@@ -3,15 +3,6 @@
 <head> 
 	<title> Registration</title> </head>
 <body>
-<style>
-	#bar {background-color: white;
-       width:800px;
-       height: 400px;
-       margin: auto; 
-       margin-top: 50px;
-       padding:10px;
-       padding-top: 20px}
-   </style>
 
 <form>
 <table>
