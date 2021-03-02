@@ -55,7 +55,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 $servername="localhost";
 $username="root";
 $password="";
-/*$conn = new mysqli($servername,$username,$password);
+$conn = new mysqli($servername,$username,$password);
 if($conn->connect_error){
 	die ("Connection failed: ". $conn->connect_error);
 }
@@ -69,13 +69,13 @@ if(mysqli_query($conn,$sql))
 else {
 	//echo "Error Creating database ".mysqli_error($conn);
 }
-*/
+
 $dbname="mydb2";
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
  die("Connection failed: " . $conn->connect_error);
 }
-/*
+
 $sql = "CREATE TABLE Det (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 Fullname VARCHAR(30) NOT NULL,
@@ -92,7 +92,7 @@ else
 {
 	echo "Error creating table ".$conn->error;
 }
-*/
+
 
 
 $sql = "INSERT INTO Det (Fullname, Username, email)
